@@ -1,0 +1,82 @@
+.postsContainer {
+    width: 700px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.postsContainer hr {
+    border: none;
+    height: 1px;
+    background: #cccccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.overflowHidden {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.post {
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 15px;
+    background: white;
+    text-align: right;
+    overflow: hidden;
+}
+
+.post h2 {
+    font-weight: 700;
+    text-align: left;
+}
+
+.post p {
+    text-align: justify;
+}
+
+.post a {
+    display: inline-block;
+    margin: 10px 0 0 0;
+    height: 30px;
+    line-height: 30px;
+    width: 75px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background: #48b23b;
+    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.1);
+}
+
+.post a:hover {
+    background: #37852d;
+}
+
+.postsContainer header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.postsContainer header h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.postsContainer header button {
+    height: 30px;
+    width: 125px;
+    font-size: 17px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background: #008be5;
+    border: none;
+    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.postsContainer header button:hover {
+    background: rgb(0, 113, 185);;
+}

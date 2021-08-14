@@ -1,0 +1,87 @@
+.modalContainer {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 5;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentForm {
+    width: 450px;
+    background: white;
+    border-radius: 5px;
+    padding: 40px 25px;
+}
+
+.contentForm h1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.contentForm label {
+    display: block;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.contentForm input {
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+    outline: none;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #a9a9a9;
+}
+
+.contentForm textarea {
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+    height: 200px;
+    outline: none;
+    padding: 10px;
+    border: 1px solid #a9a9a9;
+    resize: none;
+    overflow: auto;
+    text-align: justify;
+}
+
+.contentForm .submitButton {
+    margin-top: 20px;
+    height: 45px;
+    width: 90px;
+    cursor: pointer;
+    background: rgba(0, 139, 229, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.1);
+}
+
+.contentForm .submitButton:hover {
+    background: rgb(0, 113, 185);
+}
+
+.contentForm .cancelButton {
+    margin-left: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #008be5;
+}
+
+.responseMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.responseMessage p {
+    text-align: center;
+    font-size: 20px;
+}
