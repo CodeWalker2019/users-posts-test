@@ -2,21 +2,22 @@ import {useDispatch, useSelector} from 'react-redux';
 import '../../../index.css';
 import style from './PostEdit.module.css';
 import {
-  hideModal,
+  hideModalEdit,
   newCurrentPostBody,
   newCurrentPostTitle, putEditedPost,
   toggleEdit,
-  showModal
+  showModalEdit
 } from "../../../redux/actions/postCommentsActions";
 import Modal from "../../modal/Modal";
-import {useEffect} from "react";
+import Loader from "../../loader/Loader";
+import FadeIn from "react-fade-in";
 
 export default function PostEdit({postId}) {
   const {
     currentPostTitle,
     currentPostBody,
     post,
-    displayModal,
+    displayModalEdit,
     putEditedPostIsPending,
     putEditedPostError
   } = useSelector(store => store.postComments);
@@ -29,18 +30,18 @@ export default function PostEdit({postId}) {
   }
 
   function handleSubmit() {
-    dispatch(showModal());
+    dispatch(showModalEdit());
     dispatch(putEditedPost(postId, currentPostTitle, currentPostBody));
   }
 
   function handleOkClick() {
-    dispatch(hideModal());
+    dispatch(hideModalEdit());
     dispatch(toggleEdit());
   }
 
   return <>
-    {displayModal && <Modal>
-      {putEditedPostIsPending ? <div>Loading...</div> : <>
+    {displayModalEdit && <Modal>
+      {putEditedPostIsPending ? <Loader/> : <FadeIn>
         <p className={style.responseStatus}>
           {putEditedPostError ? putEditedPostError : 'Success!'}
         </p>
@@ -50,7 +51,7 @@ export default function PostEdit({postId}) {
         >
           Ok
         </button>
-      </>}
+      </FadeIn>}
     </Modal>}
 
     <div className='postContainer'>

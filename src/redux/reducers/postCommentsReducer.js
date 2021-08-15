@@ -6,11 +6,11 @@ import {
   FETCH_POST_COMMENTS_SUCCESS,
   FETCH_POST_ERROR,
   FETCH_POST_REQUEST,
-  FETCH_POST_SUCCESS, HIDE_MODAL,
+  FETCH_POST_SUCCESS, HIDE_MODAL_DELETE, HIDE_MODAL_EDIT,
   NEW_CURRENT_POST_BODY,
   NEW_CURRENT_POST_TITLE,
   PUT_EDITED_POST_REQUEST,
-  PUT_EDITED_POST_RESPONSE, SHOW_MODAL,
+  PUT_EDITED_POST_RESPONSE, SHOW_MODAL_DELETE, SHOW_MODAL_EDIT,
   TOGGLE_EDIT_POST,
 } from "../actions/postCommentsActions";
 
@@ -27,7 +27,8 @@ const initialState = {
   currentPostTitle: '',
   currentPostBody: '',
 
-  displayModal: false,
+  displayModalDelete: false,
+  displayModalEdit: false,
   putEditedPostIsPending: false,
   putEditedPostError: '',
   deletePostIsPending: false,
@@ -63,16 +64,28 @@ export default function postCommentsReducer(state = initialState, action) {
         putEditedPostIsPending: true
       }
 
-    case SHOW_MODAL:
+    case SHOW_MODAL_EDIT:
       return {
         ...state,
-        displayModal: true
+        displayModalEdit: true
       }
 
-    case HIDE_MODAL:
+    case HIDE_MODAL_EDIT:
       return {
         ...state,
-        displayModal: false
+        displayModalEdit: false
+      }
+
+    case SHOW_MODAL_DELETE:
+      return {
+        ...state,
+        displayModalDelete: true
+      }
+
+    case HIDE_MODAL_DELETE:
+      return {
+        ...state,
+        displayModalDelete: false
       }
 
     case NEW_CURRENT_POST_BODY:

@@ -14,18 +14,32 @@ export const PUT_EDITED_POST_REQUEST = 'post/put/editedPostRequest';
 export const PUT_EDITED_POST_RESPONSE = 'post/put/editedPostResponse';
 export const DELETE_POST_REQUEST = 'post/delete/request';
 export const DELETE_POST_RESPONSE = 'post/delete/response';
-export const SHOW_MODAL = 'post/showModal';
-export const HIDE_MODAL = 'post/hideModal';
+export const SHOW_MODAL_EDIT = 'post/showModalEdit';
+export const HIDE_MODAL_EDIT = 'post/hideModalEdit';
+export const SHOW_MODAL_DELETE = 'post/showModalDelete';
+export const HIDE_MODAL_DELETE = 'post/hideModalDelete';
 
-export function hideModal() {
+export function hideModalDelete() {
   return {
-    type: HIDE_MODAL
+    type: HIDE_MODAL_DELETE
   }
 }
 
-export function showModal() {
+export function showModalDelete() {
   return {
-    type: SHOW_MODAL
+    type: SHOW_MODAL_DELETE
+  }
+}
+
+export function hideModalEdit() {
+  return {
+    type: HIDE_MODAL_EDIT
+  }
+}
+
+export function showModalEdit() {
+  return {
+    type: SHOW_MODAL_EDIT
   }
 }
 

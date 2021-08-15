@@ -3,6 +3,8 @@ import {useDispatch, useSelector} from "react-redux";
 import {fetchUsers} from "../../redux/actions/usersActions";
 import style from './UsersTable.module.css'
 import {NavLink} from "react-router-dom";
+import Loader from "../loader/Loader";
+import FadeIn from "react-fade-in";
 
 export default function UsersTable() {
   const dispatch = useDispatch();
@@ -12,8 +14,8 @@ export default function UsersTable() {
     dispatch(fetchUsers());
   }, [])
 
-  return loading ? <div>loading...</div> :
-    error ? <div>{error}</div> :
+  return loading ? <FadeIn><Loader/></FadeIn> :
+    error ? <FadeIn><div>{error}</div></FadeIn> :
       usersData.length > 0 &&
         (<table className={style.usersTable}>
           <thead>

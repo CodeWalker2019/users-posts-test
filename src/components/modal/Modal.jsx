@@ -1,13 +1,16 @@
 import style from './Modal.module.css';
 import ReactDOM from 'react-dom';
+import FadeIn from "react-fade-in";
 
 export default function Modal({children}) {
 
   return ReactDOM.createPortal(
     <div className={style.modalContainer}>
-      <div className={style.contentForm}>
-        {children}
-      </div>
+      <FadeIn>
+        <div className={style.contentForm}>
+          {children}
+        </div>
+      </FadeIn>
     </div>,
     document.getElementById('modal'));
 }
