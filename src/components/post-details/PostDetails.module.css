@@ -1,0 +1,78 @@
+.container {
+    width: 700px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.container hr {
+    border: none;
+    height: 1px;
+    background: #cccccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container header {
+    display: inline-block;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.container .postButton {
+    border: none;
+    margin: 20px 0 0 15px;
+    width: 100px;
+    background: #008be5;
+    color: white;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.1);
+}
+
+.container .postButton {
+    border: none;
+    margin: 20px 0 0 15px;
+    width: 100px;
+    background: #008be5;
+    color: white;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.1);
+}
+
+.container .postButton:hover {
+    background: rgba(0, 102, 169, 0.99);
+}
+
+.container .buttonRed {
+    background: #c14a4a;
+}
+
+.container .buttonRed:hover {
+    background: #913939;
+}
+
+.okButton {
+    display: block;
+    margin: 20px auto 0;
+    border: none;
+    width: 100px;
+    background: #008be5;
+    color: white;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.1);
+}
+
+.okButton:hover {
+    background: rgba(0, 102, 169, 0.99);
+}
+
+.deleteStatus {
+    text-align: center;
+    font-size: 17px;
+}

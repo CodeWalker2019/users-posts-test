@@ -16,3 +16,60 @@ body {
 button, a {
   transition: background-color 0.4s;
 }
+
+.postContainer {
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 15px;
+  background: white;
+  text-align: right;
+  overflow: hidden;
+}
+
+.postContainer h2 {
+  font-weight: 700;
+  text-align: left;
+}
+
+.postContainer p {
+  text-align: justify;
+}
+
+.postContainer a {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  width: 75px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background: #48b23b;
+  box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.1);
+  margin: 10px 0 0 10px;
+}
+
+.postContainer a:hover {
+  background: #37852d;
+}
+
+.postContainer button {
+  display: inline-block;
+  margin: 10px 0 0 10px;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+  width: 75px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  border: none;
+  text-decoration: none;
+  background: #48b23b;
+  box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.1);
+}
+
+.postContainer button:hover {
+  background: #37852d;
+}
+

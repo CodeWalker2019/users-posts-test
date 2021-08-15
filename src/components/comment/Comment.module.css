@@ -1,0 +1,22 @@
+.commentContainer {
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.commentContainer h1 {
+
+    font-size: 17px;
+}
+
+.commentContainer h2 {
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.commentContainer p {
+    margin-top: 5px;
+}
+

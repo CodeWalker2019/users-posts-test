@@ -40,6 +40,7 @@ export function postNewPostRequest() {
   }
 }
 
+
 export function fetchPostsRequest() {
   return {
     type: FETCH_POSTS_REQUEST

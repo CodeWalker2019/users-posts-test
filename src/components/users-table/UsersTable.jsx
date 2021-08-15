@@ -42,7 +42,7 @@ export default function UsersTable() {
               <td>{user.phone}</td>
               <td>{user.website}</td>
               <td>{user.company.name}</td>
-              <td><NavLink to={`/${user.id}/posts`}>Posts</NavLink></td>
+              <td><NavLink to={`/userId=${user.id}/posts`}>Posts</NavLink></td>
             </tr>
           })}
           </tbody>

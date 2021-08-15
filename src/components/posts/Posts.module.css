@@ -17,40 +17,20 @@
     height: 100vh;
 }
 
-.post {
-    margin: 20px auto;
-    padding: 15px;
-    border-radius: 15px;
-    background: white;
-    text-align: right;
-    overflow: hidden;
-}
-
-.post h2 {
-    font-weight: 700;
-    text-align: left;
-}
-
-.post p {
-    text-align: justify;
-}
-
-.post a {
-    display: inline-block;
-    margin: 10px 0 0 0;
-    height: 30px;
-    line-height: 30px;
-    width: 75px;
-    border-radius: 10px;
-    text-align: center;
+.submitButton {
+    margin-top: 20px;
+    height: 45px;
+    width: 90px;
+    cursor: pointer;
+    background: rgba(0, 139, 229, 1);
     color: white;
-    text-decoration: none;
-    background: #48b23b;
+    border: none;
+    border-radius: 5px;
     box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.1);
 }
 
-.post a:hover {
-    background: #37852d;
+.submitButton:hover {
+    background: rgb(0, 113, 185);
 }
 
 .postsContainer header {
@@ -79,4 +59,14 @@
 
 .postsContainer header button:hover {
     background: rgb(0, 113, 185);;
+}
+
+.responseMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.responseMessage p {
+    font-size: 20px;
 }
